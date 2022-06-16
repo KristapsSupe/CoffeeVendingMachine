@@ -19,7 +19,7 @@ $wallet = [
     10 => 10,
     100 => 10,
     200 => 10,
-    ];
+];
 
 
 $drinks = [
@@ -28,7 +28,10 @@ $drinks = [
     'latte' => 250
 ];
 
-$drinkCost =
+
+var_dump($drinks);
+
+
 $insertedAmount = 0;
 
 while (true) {
@@ -73,12 +76,12 @@ if (!isset($drinks[$chooseDrink])) {
     exit;
 }
 
-if ($insertedAmount < $drinkCost) {
+if ($insertedAmount < $drinks[$chooseDrink]) {
     echo 'Not enough coins.';
     exit;
 }
 
-$returnAmount = $insertedAmount - $drinkCost;
+$returnAmount = $insertedAmount - $drinks[$chooseDrink];
 
 echo "You choose: " . $chooseDrink . PHP_EOL;
 echo "Your change: " . $returnAmount . PHP_EOL;
