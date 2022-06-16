@@ -27,8 +27,6 @@ $drinks = [
     'capuccino' => 200,
     'latte' => 250
 ];
-var_dump($wallet);
-var_dump($drinks);
 
 $insertedAmount = 0;
 
