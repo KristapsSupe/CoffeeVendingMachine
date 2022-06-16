@@ -28,11 +28,12 @@ $drinks = [
     'latte' => 250
 ];
 
+$drinkCost =
 $insertedAmount = 0;
 
 while (true) {
     foreach ($drinks as $name => $price) {
-        echo "Drinks: " . "$name - $price | ";
+        echo "$name - $price | ";
     }
     echo PHP_EOL;
     echo "-------------------------" . PHP_EOL;
@@ -72,12 +73,15 @@ if (!isset($drinks[$chooseDrink])) {
     exit;
 }
 
-if ($insertedAmount < $drinks) {
+if ($insertedAmount < $drinkCost) {
     echo 'Not enough coins.';
+    exit;
 }
 
-echo "You choose: " . $chooseDrink . PHP_EOL;
+$returnAmount = $insertedAmount - $drinkCost;
 
+echo "You choose: " . $chooseDrink . PHP_EOL;
+echo "Your change: " . $returnAmount . PHP_EOL;
 
 
 
