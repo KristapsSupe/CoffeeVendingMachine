@@ -29,9 +29,6 @@ $drinks = [
 ];
 
 
-var_dump($drinks);
-
-
 $insertedAmount = 0;
 
 while (true) {
