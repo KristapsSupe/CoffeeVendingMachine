@@ -1,16 +1,4 @@
 <?php
-// kafijas aparats
-// maka monetas
-// 5 - 1
-// 3 - 2
-// 5 - 5
-
-//iemet monetas sakuma
-// iemest 10, 3 - neeksiste, ieliekt -2 kopa =2 -- 0.12$
-// iemest vel monetu vai pirkt produktu
-// izvelies dzerienu
-
-//atlikums jaizdod monetas 1.00$, 1.07$ izdod sakot no lielakas monetas
 
 $wallet = [
     1 => 10,
